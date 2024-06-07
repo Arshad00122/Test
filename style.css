@@ -42,7 +42,7 @@ li a {
     color: black;
     padding: 0.5rem 1rem;
     text-decoration: none;
-    font-size: 1.875rem; /* 30px equivalent */
+    font-size: 1.5rem; /* Adjusted font size */
     background-color: yellow;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -58,21 +58,20 @@ li a:hover {
     padding: 0.625rem 1.5625rem; /* 10px 25px equivalent */
     border-radius: 40px;
     display: inline-block;
-    font-size: 2.5rem; /* Adjusted font size */
+    font-size: 2rem; /* Adjusted font size */
     font-family: 'Bebas Neue', sans-serif;
     position: absolute;
     top: 2%;
-    left:0%;
+    left: 0;
 }
 
-.centering
-{
+.centering {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 50%;
+    width: 90%; /* Adjusted width */
     margin: 3% auto;
     padding: 1rem;
     box-sizing: border-box;
@@ -81,14 +80,14 @@ li a:hover {
 .main-heading {
     text-align: center;
     margin: 2%;
-    font-size: 2.375rem; /* 38px equivalent */
+    font-size: 1.875rem; /* Adjusted font size */
     font-weight: 700;
 }
 
 /* Intro text */
 .intro-text {
     margin: 5%;
-    font-size: 1.75rem; /* 28px equivalent */
+    font-size: 1.25rem; /* Adjusted font size */
     font-weight: 700;
 }
 
@@ -109,11 +108,11 @@ li a:hover {
     background-color: yellow;
     border-radius: 25px;
     padding: 1rem; /* Add padding for better spacing */
-    font-size: 2rem; /* Adjusted font size */
+    font-size: 1.5rem; /* Adjusted font size */
 }
 
 .product-description {
-    font-size: 1.25rem; /* Adjusted font size */
+    font-size: 1rem; /* Adjusted font size */
     text-align: left; /* Align text to the left for readability */
     line-height: 1.8; /* Increase line height for better readability */
     margin: 0 5%; /* Add margins */
@@ -149,24 +148,48 @@ li a:hover {
 }
 
 @media (max-width: 767px) {
+    body {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    ul {
+        flex-direction: column; /* Adjust nav bar layout for smaller screens */
+    }
+
+    li {
+        flex: none; /* Remove flex property for smaller screens */
+    }
+
     li a {
         font-size: 1.25rem; /* Adjust font size for smaller screens */
         padding: 0.5rem; /* Adjust padding for smaller screens */
     }
 
-    .centering{
-        width: 50%;
-    }
-
     .headingindex {
-        font-size: 2.5rem; /* Adjust font size for smaller screens */
+        font-size: 2rem; /* Adjust font size for smaller screens */
+        position: relative; /* Change position to relative for smaller screens */
+        top: 0;
+        left: 0;
+        margin: 10px 0; /* Add margin for spacing */
     }
 
-    .product-heading {
+    .main-heading {
         font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
 
-    .product-description {
+    .intro-text {
         font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .product-heading {
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
+    }
+
+    .product-description {
+        font-size: 0.875rem; /* Adjust font size for smaller screens */
+    }
+
+    .centering {
+        width: 100%; /* Adjust width for smaller screens */
     }
 }
