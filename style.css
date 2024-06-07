@@ -1,0 +1,172 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue:regular');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    font-size: 1rem;
+    background: url('images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Navigation bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+    z-index: 1000; /* To make it above all */
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    flex: 1;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1.875rem; /* 30px equivalent */
+    background-color: yellow;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/* Main headings */
+.headingindex {
+    background-color: yellow;
+    padding: 0.625rem 1.5625rem; /* 10px 25px equivalent */
+    border-radius: 40px;
+    display: inline-block;
+    font-size: 2.5rem; /* Adjusted font size */
+    font-family: 'Bebas Neue', sans-serif;
+    position: absolute;
+    top: 2%;
+    left:0%;
+}
+
+.centering
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin: 3% auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.main-heading {
+    text-align: center;
+    margin: 2%;
+    font-size: 2.375rem; /* 38px equivalent */
+    font-weight: 700;
+}
+
+/* Intro text */
+.intro-text {
+    margin: 5%;
+    font-size: 1.75rem; /* 28px equivalent */
+    font-weight: 700;
+}
+
+/* Highlighted text */
+.highlight {
+    color: red;
+}
+
+/* Container and product descriptions */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.product-heading {
+    margin-right: 1%;
+    font-weight: 600;
+    background-color: yellow;
+    border-radius: 25px;
+    padding: 1rem; /* Add padding for better spacing */
+    font-size: 2rem; /* Adjusted font size */
+}
+
+.product-description {
+    font-size: 1.25rem; /* Adjusted font size */
+    text-align: left; /* Align text to the left for readability */
+    line-height: 1.8; /* Increase line height for better readability */
+    margin: 0 5%; /* Add margins */
+}
+
+/* Transition animations */
+.transition-animation {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+.transition-animation:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive layout adjustments */
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .headingindex {
+        font-size: 3.125rem; /* Adjusted font size */
+    }
+
+    .centering {
+        width: 60%;
+    }
+}
+
+@media (max-width: 767px) {
+    li a {
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+    }
+
+    .centering{
+        width: 50%;
+    }
+
+    .headingindex {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .product-heading {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .product-description {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+}
